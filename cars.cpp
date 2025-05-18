@@ -272,30 +272,45 @@ public:
         cars.push_back(new ImportedPetrolCar("I04", "Audi Q7", "Audi", 6, 70000, 55));
         cars.push_back(new ImportedPetrolCar("I05", "Porsche Macan", "Porsche", 4, 85000, 60));
 
-        cars.push_back(new PetrolCar("N01", "Maruti Swift", "Maruti", 22, 8000, 20));
-        cars.push_back(new PetrolCar("N02", "Hyundai i20", "Hyundai", 18, 10000, 300));
-        cars.push_back(new PetrolCar("N03", "Tata Altroz", "Tata", 15, 9500, 37));
-        cars.push_back(new PetrolCar("N04", "Honda Amaze", "Honda", 20, 10500, 35));
+        // Maruti
+        cars.push_back(new PetrolCar("N05", "Maruti Baleno", "Maruti", 21, 8200, 25));
+        cars.push_back(new PetrolCar("N06", "Maruti Celerio", "Maruti", 23, 7500, 18));
+        cars.push_back(new PetrolCar("N07", "Maruti Dzire", "Maruti", 20, 9000, 22));
 
-        cars.push_back(new EVCar("E01", "Tata Nexon EV", "Tata", 500, 15000, 60));
-        cars.push_back(new EVCar("E02", "Tata Tigor EV", "Tata", 200, 12000, 26));
-        cars.push_back(new EVCar("E03", "Tata Tiago EV", "Tata", 2500, 11000, 24));
-        cars.push_back(new EVCar("E04", "Tata Punch EV", "Tata", 400, 13000, 35));
+        // Hyundai
+        cars.push_back(new PetrolCar("N08", "Hyundai Verna", "Hyundai", 17, 11000, 40));
+        cars.push_back(new PetrolCar("N09", "Hyundai Grand i10", "Hyundai", 19, 8600, 28));
+        cars.push_back(new PetrolCar("N10", "Hyundai Aura", "Hyundai", 18, 9200, 33));
 
-        cars.push_back(new EVCar("M01", "Mahindra eKUV100", "Mahindra", 100, 14000, 35));
-        cars.push_back(new EVCar("M02", "Mahindra eXUV300", "Mahindra", 300, 20000, 39));
-        cars.push_back(new EVCar("M03", "Mahindra Treo", "Mahindra", 600, 9000, 10)); 
-        cars.push_back(new EVCar("M04", "Mahindra eVerito", "Mahindra", 700, 15000, 21));
+        // Tata
+        cars.push_back(new PetrolCar("N11", "Tata Tiago", "Tata", 20, 7900, 19));
+        cars.push_back(new PetrolCar("N12", "Tata Tigor", "Tata", 17, 9100, 21));
+        cars.push_back(new PetrolCar("N13", "Tata Punch", "Tata", 18, 10200, 30));
 
-        cars.push_back(new EVCar("MG01", "MG ZS EV", "MG", 600, 29000, 44));
-        cars.push_back(new EVCar("MG02", "MG Astor EV", "MG", 500, 32000, 38));
-        cars.push_back(new EVCar("MG03", "MG Comet EV", "MG", 100, 12000, 24));  // small hatch
-        cars.push_back(new EVCar("MG04", "MG Hector EV", "MG", 1000, 35000, 50)); // concept/expected
+        // Honda
+        cars.push_back(new PetrolCar("N14", "Honda City", "Honda", 16, 11500, 38));
+        cars.push_back(new PetrolCar("N15", "Honda Jazz", "Honda", 19, 9700, 29));
+        cars.push_back(new PetrolCar("N16", "Honda WR-V", "Honda", 18, 10100, 34));
 
-        cars.push_back(new EVCar("H01", "Hyundai Kona Electric", "Hyundai",250, 34000, 39));
-        cars.push_back(new EVCar("H02", "Hyundai Ioniq Electric", "Hyundai", 300, 32000, 38));
-        cars.push_back(new EVCar("H03", "Hyundai Aura EV", "Hyundai", 400, 28000, 36));  // hypothetical EV variant
-        cars.push_back(new EVCar("H04", "Hyundai Creta EV", "Hyundai", 800, 30000, 40)); // upcoming EV SUV
+        cars.push_back(new EVCar("E01", "Tata Nexon EV", "Tata", 0, 15000, 60));
+        cars.push_back(new EVCar("E02", "Tata Tigor EV", "Tata", 0, 12000, 26));
+        cars.push_back(new EVCar("E03", "Tata Tiago EV", "Tata", 0, 11000, 24));
+        cars.push_back(new EVCar("E04", "Tata Punch EV", "Tata", 0, 13000, 35));
+
+        cars.push_back(new EVCar("M01", "Mahindra eKUV100", "Mahindra", 0, 14000, 35));
+        cars.push_back(new EVCar("M02", "Mahindra eXUV300", "Mahindra", 0, 20000, 39));
+        cars.push_back(new EVCar("M03", "Mahindra Treo", "Mahindra", 0, 9000, 10));
+        cars.push_back(new EVCar("M04", "Mahindra eVerito", "Mahindra", 0, 15000, 21));
+
+        cars.push_back(new EVCar("MG01", "MG ZS EV", "MG", 0, 29000, 44));
+        cars.push_back(new EVCar("MG02", "MG Astor EV", "MG", 0, 32000, 38));
+        cars.push_back(new EVCar("MG03", "MG Comet EV", "MG", 0, 12000, 24));  // small hatch
+        cars.push_back(new EVCar("MG04", "MG Hector EV", "MG", 0, 35000, 50)); // concept/expected
+
+        cars.push_back(new EVCar("H01", "Hyundai Kona Electric", "Hyundai", 0, 34000, 39));
+        cars.push_back(new EVCar("H02", "Hyundai Ioniq Electric", "Hyundai", 0, 32000, 38));
+        cars.push_back(new EVCar("H03", "Hyundai Aura EV", "Hyundai", 0, 28000, 36));  // hypothetical EV variant
+        cars.push_back(new EVCar("H04", "Hyundai Creta EV", "Hyundai", 0, 30000, 40)); // upcoming EV SUV
     }
 
     ~CarRentalSystem()
